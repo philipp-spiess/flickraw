@@ -13,7 +13,7 @@ module FlickRaw
 
     class << self
       def encode_value(v)
-        v = v.to_s.encode("utf-8").force_encoding("ascii-8bit") if RUBY_VERSION >= "1.9"
+        #v = v.to_s.encode("utf-8").force_encoding("ascii-8bit") if RUBY_VERSION >= "1.9"
         v.to_s
       end
 
